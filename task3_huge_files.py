@@ -28,9 +28,9 @@ def file_three(file):
 
 
 if __name__ == "__main__":
-    f1_thread = Thread(target=file_one, args=(os.path.join('recources', 'file1.txt'),))
-    f2_thread = Thread(target=file_two, args=(os.path.join('recources', 'file2.txt'),))
-    f3_thread = Thread(target=file_three, args=(os.path.join('recources', 'file3.txt'),))
+    f1_thread = Thread(target=file_one, args=(os.path.join('resources', 'file1.txt'),))
+    f2_thread = Thread(target=file_two, args=(os.path.join('resources', 'file2.txt'),))
+    f3_thread = Thread(target=file_three, args=(os.path.join('resources', 'file3.txt'),))
 
     f1_thread.start()
     time.sleep(0.2)
