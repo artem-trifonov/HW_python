@@ -9,25 +9,25 @@ exception_message = "Exception raised"
 
 def task1(delta):
     try:
-        if delta.count('s'):
+        if delta.count('s')==1:
             if delta == 's':
                 result = sec
             else:
                 delta = delta.replace('s', '')
                 result = int(timedelta(seconds=float(delta)).total_seconds())
-        elif delta.count('m'):
+        elif delta.count('m')==1:
             if delta == 'm':
                 result = minute
             else:
                 delta = delta.replace('m', '')
                 result = int(timedelta(minutes=float(delta)).total_seconds())
-        elif delta.count('h'):
+        elif delta.count('h')==1:
             if delta == 'h':
                 result = hour
             else:
                 delta = delta.replace('h', '')
                 result = int(timedelta(hours=float(delta)).total_seconds())
-        elif delta.count('d'):
+        elif delta.count('d')==1:
             if delta == 'd':
                 result = day
             else:
@@ -41,4 +41,4 @@ def task1(delta):
 
 
 if __name__ == "__main__":
-    print(task1('60.5m'))
+    print(task1('10dd'))
